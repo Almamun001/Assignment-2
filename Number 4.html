@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var name = prompt("Enter your name: ");
+      let length = name.length;
+      let upc= 0;
+      let lpc= 0;
+      for(let i=0; i<length; i++){
+        let char = name[i];
+        if(char>="a" && char<="z"){
+            lpc++;
+        }
+        else if(char>="A" && char<="Z"){
+            upc++;
+        }
+      }
+      console.log("Name: "+name);
+      console.log("Length: "+length);
+      console.log("UpperCase latters: "+upc);
+      console.log("LowerCase latters: "+lpc);
+    </script>
+  </body>
+</html>
